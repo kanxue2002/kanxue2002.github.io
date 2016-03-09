@@ -6,10 +6,41 @@
 		<atom:link href="//kiko.gfjaru.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>BugTrack</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;
+一般在app项目的开发过程中，都有专业的测试人员进行测试bug，而最严重的bug就是crash。而又因为一些其它原来，这些crash并不是能百分百的复现，所以看懂苹果的crash文件，也成为了app开发人员的重要能力之一。
+&lt;/p&gt;
+
+&lt;h2 id=&quot;crash&quot;&gt;Crash文件&lt;/h2&gt;
+&lt;p&gt;首先我们编写一段有Crash的代码&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- (void)viewDidLoad {
+    [super viewDidLoad]; 
+    NSArray *array = [NSArray new];
+    NSLog(@&quot;%@&quot;, array[1]);
+    // Do any additional setup after loading the view.
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;将程序运行在手机上，并拔线再运行一次，让手机生成crash文件。
+再回到xcode&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;image/201603051518.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+				<pubDate>Thu, 03 Mar 2016 00:00:00 +0800</pubDate>
+				<link>//kiko.gfjaru.com/2016/03/03/bugTrack/</link>
+				<guid isPermaLink="true">//kiko.gfjaru.com/2016/03/03/bugTrack/</guid>
+			</item>
+		
+			<item>
 				<title>Example content</title>
         <description>&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper est in imperdiet molestie. Curabitur aliquet sem in ante venenatis.&lt;/p&gt;
 
 &lt;p&gt;Morbi ultrices libero imperdiet &lt;a href=&quot;#&quot;&gt;lectus&lt;/a&gt; dignissim, sit amet bibendum nisl consectetur. Morbi erat purus, pretium at ligula tincidunt, faucibus commodo sem. Etiam vel porttitor est, vitae maximus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien turpis, cursus non porta ac.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;printf(&quot;hello world&quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;lorem&quot;&gt;Lorem&lt;/h2&gt;
 &lt;p&gt;Quisque sodales euismod nibh, gravida venenatis nibh dignissim eget. Morbi gravida enim vel lectus aliquet aliquet.&lt;/p&gt;

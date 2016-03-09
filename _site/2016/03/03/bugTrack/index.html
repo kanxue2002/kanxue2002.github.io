@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BugTrack</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
+  <link rel="stylesheet" href="/style.css">
+  <!-- Begin Jekyll SEO tag v1.3.1 -->
+<title>BugTrack - 在野武将</title>
+<meta property="og:title" content="BugTrack" />
+<meta name="description" content="iOS程序如何追踪bug" />
+<meta property='og:description' content="iOS程序如何追踪bug" />
+<link rel="canonical" href="//kiko.gfjaru.com/2016/03/03/bugTrack/" />
+<meta property='og:url' content='//kiko.gfjaru.com/2016/03/03/bugTrack/' />
+<meta property="og:site_name" content="在野武将" />
+<meta property="og:image" content="//kiko.gfjaru.comhttp://placehold.it/400x200" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-03-03T00:00:00+08:00" />
+<link rel="prev" href="//kiko.gfjaru.com/2015/08/09/example-content/" title="Example content" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@gfjaru" />
+<meta name="twitter:title" content="BugTrack - 在野武将" />
+<meta name="twitter:description" content="iOS程序如何追踪bug" />
+<meta name="twitter:image" content="//kiko.gfjaru.comhttp://placehold.it/400x200" />
+<meta name="twitter:creator" content="@jiapeijun" />
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+
+
+    "@type" : "BlogPosting",
+
+    "headline": "BugTrack",
+
+    "image": "http://placehold.it/400x200",
+
+    "datePublished": "2016-03-03T00:00:00+08:00",
+
+    "description": "iOS程序如何追踪bug",
+
+
+    "url" : "//kiko.gfjaru.com/2016/03/03/bugTrack/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <div class="container">
+    <header class="masthead">
+  <h1 class="masthead-title--small">
+    <a href="/">在野武将</a>
+  </h1>
+</header>
+<div class="content post">
+  <h1 class="post-title">BugTrack</h1>
+  <div class="post-date">
+    <time>03 Mar 2016</time>
+  </div>
+  <p class="lead">
+一般在app项目的开发过程中，都有专业的测试人员进行测试bug，而最严重的bug就是crash。而又因为一些其它原来，这些crash并不是能百分百的复现，所以看懂苹果的crash文件，也成为了app开发人员的重要能力之一。
+</p>
+
+<h2 id="crash">Crash文件</h2>
+<p>首先我们编写一段有Crash的代码</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)viewDidLoad {
+    [super viewDidLoad]; 
+    NSArray *array = [NSArray new];
+    NSLog(@"%@", array[1]);
+    // Do any additional setup after loading the view.
+}
+</code></pre>
+</div>
+<p>将程序运行在手机上，并拔线再运行一次，让手机生成crash文件。
+再回到xcode</p>
+
+<p><img src="image/201603051518.jpg" alt="" /></p>
+
+</div>
+
+  </div>
+</body>
+</html>
