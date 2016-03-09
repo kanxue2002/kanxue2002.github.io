@@ -24,4 +24,4 @@ author:       "jiapeijun"
 将程序运行在手机上，并拔线再运行一次，让手机生成crash文件。
 再回到xcode
 
-![](image/201603051518.jpg)
+![](images/201603081717.jpg)
